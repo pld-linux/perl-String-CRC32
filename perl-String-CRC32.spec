@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	CRC32
-%include	/usr/lib/rpm/macros.perl
 Summary:	String-CRC32 perl module
 Summary(pl):	Modu³ perla String-CRC32
 Name:		perl-String-CRC32
 Version:	1.2
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ String-CRC32 - calculates CRC of 32 bit lenghts.
 String-CRC32 - oblicza CRC d³ugo¶ci 32 bitów.
 
 %prep
-%setup -q -n String-CRC32-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL

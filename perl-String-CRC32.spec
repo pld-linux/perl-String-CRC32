@@ -3,7 +3,7 @@ Summary:	String-CRC32 perl module
 Summary(pl):	Modu³ perla String-CRC32
 Name:		perl-String-CRC32
 Version:	1.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl

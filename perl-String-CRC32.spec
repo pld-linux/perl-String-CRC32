@@ -25,7 +25,7 @@ String::CRC32 - oblicza CRC d³ugo¶ci 32 bitów.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install

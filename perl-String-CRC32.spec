@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	CRC32
-Summary:	String-CRC32 perl module
-Summary(pl):	Modu³ perla String-CRC32
+Summary:	String::CRC32 perl module
+Summary(pl):	Modu³ perla String::CRC32
 Name:		perl-String-CRC32
 Version:	1.2
 Release:	5
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-String-CRC32 - calculates CRC of 32 bit lenghts.
+String::CRC32 - calculates CRC of 32 bit lenghts.
 
 %description -l pl
-String-CRC32 - oblicza CRC d³ugo¶ci 32 bitów.
+String::CRC32 - oblicza CRC d³ugo¶ci 32 bitów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

@@ -23,7 +23,7 @@ String::CRC32 - oblicza CRC d³ugo¶ci 32 bitów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install

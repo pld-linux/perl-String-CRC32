@@ -5,11 +5,11 @@ Summary:	String::CRC32 perl module
 Summary(pl):	Modu³ perla String::CRC32
 Name:		perl-String-CRC32
 Version:	1.2
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +23,8 @@ String::CRC32 - oblicza CRC d³ugo¶ci 32 bitów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -37,8 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/String/CRC32.pm
-%dir %{perl_sitearch}/auto/String/CRC32
-%{perl_sitearch}/auto/String/CRC32/CRC32.bs
-%attr(755,root,root) %{perl_sitearch}/auto/String/CRC32/CRC32.so
+%{perl_vendorarch}/String/CRC32.pm
+%dir %{perl_vendorarch}/auto/String/CRC32
+%{perl_vendorarch}/auto/String/CRC32/CRC32.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/String/CRC32/CRC32.so
 %{_mandir}/man3/*

@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	String
-%define	pnam	CRC32
+%define		pdir	String
+%define		pnam	CRC32
 Summary:	String::CRC32 perl module
 Summary(pl):	Modu³ perla String::CRC32
 Name:		perl-String-CRC32

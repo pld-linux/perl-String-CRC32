@@ -8,12 +8,12 @@
 Summary:	String::CRC32 perl module
 Summary(pl):	Modu³ perla String::CRC32
 Name:		perl-String-CRC32
-Version:	1.2
-Release:	8
+Version:	1.3
+Release:	1
 License:	Public Domain
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	94b13443eac7241a323a876da95ac1c0
+# Source0-md5:	7683cd1b183a6af807f20ee5fd076d0b
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	CRC32
 Summary:	String::CRC32 perl module
-Summary(pl):	Modu≥ perla String::CRC32
+Summary(pl.UTF-8):   Modu≈Ç perla String::CRC32
 Name:		perl-String-CRC32
 Version:	1.4
 Release:	1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 String::CRC32 - calculates CRC of 32 bit lenghts.
 
-%description -l pl
-String::CRC32 - oblicza CRC d≥ugo∂ci 32 bitÛw.
+%description -l pl.UTF-8
+String::CRC32 - oblicza CRC d≈Çugo≈õci 32 bit√≥w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

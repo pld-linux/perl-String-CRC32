@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	CRC32
 Summary:	String::CRC32 perl module
-Summary(pl.UTF-8):   Moduł perla String::CRC32
+Summary(pl.UTF-8):	Moduł perla String::CRC32
 Name:		perl-String-CRC32
 Version:	1.4
 Release:	1

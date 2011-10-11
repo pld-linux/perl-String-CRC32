@@ -9,7 +9,7 @@ Summary:	String::CRC32 - Perl interface to CRC32 generation
 Summary(pl.UTF-8):	String::CRC32 - perlowy interfejs do generowania CRC32
 Name:		perl-String-CRC32
 Version:	1.4
-Release:	6
+Release:	7
 License:	Public Domain
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
